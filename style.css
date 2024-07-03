@@ -59,7 +59,7 @@ nav ul li a.active{
 
 /* header section code start here  */
 .banner{
-    background-image: url('/images/pexels-achim-bongard-87217-352096\ \(1\).jpg');
+    background-image: url("images/pexels-achim-bongard-87217-352096\ \(1\).jpg");
     height: 90vh;
     background-repeat: no-repeat;
     background-position: center center;
@@ -70,8 +70,53 @@ nav ul li a.active{
 
 /* header section code end  here  */
 
+/* main section code start here  */
 
-/* responsive code start here  */
+.first-section{
+    background-color: rgb(29, 23, 23);
+    padding: 50px;
+}
+.section-titel{
+    width: auto;
+    text-align: center;
+    color: rgb(83, 223, 48);
+    font-size: 27px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}
+.service-parent{
+    width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 50px 0;
+}
+.single-service{
+    text-align: center;
+    border: 1px solid rgb(83, 223, 48);
+    border-radius: 5px;
+}
+.service-parent i{
+    color: rgb(83, 223, 48);
+    font-size: 30px;
+    padding-top: 10px;
+}
+.single-service h2{
+    color: white;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.single-service p{
+    color: rgb(177, 173, 173);
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+
+/* main section code end  here  */
+
+
+/* nav bar responsive code start here  */
 
 @media only screen and (max-width: 940px){
     .menu-btn{
@@ -103,3 +148,31 @@ nav ul li a.active{
         color: rgb(83, 223, 48);
     }
 }
+/* nav bar responsive code end here  */
+
+/* main section respensive code start here  */
+
+@media only screen and (max-width: 688px){
+    .service-parent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        grid-gap: 10px;
+    }
+    .single-service{
+        margin: 10px 0;
+
+    }
+}
+@media only screen and (min-width: 689px) and (max-width: 1099px){
+    .service-parent{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        grid-gap: 20px;
+    }
+
+}
+
+
+/* main section respensive code end here  */
