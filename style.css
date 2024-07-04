@@ -72,47 +72,47 @@ nav ul li a.active{
 
 /* main section code start here  */
 
-.first-section{
-    background-color: rgb(29, 23, 23);
+
+
+.Services{
+    background-color: black;
     padding: 50px;
 }
-.section-titel{
+.Services .titel{
     width: auto;
-    text-align: center;
     color: rgb(83, 223, 48);
-    font-size: 27px;
+    text-align: center;
     letter-spacing: 0.2em;
-    font-weight: bold;
+    font-size: 20px;
 }
-.service-parent{
-    width: 1100px;
-    margin: 0 auto;
+.Services .parent{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 30px;
+    margin: 0 auto;
+    width: 1100px;
     padding: 50px 0;
 }
-.single-service{
+.Services .service-item{
+    border: 2px solid rgb(83, 223, 48);
     text-align: center;
-    border: 1px solid rgb(83, 223, 48);
+    padding: 15px 0;
     border-radius: 5px;
 }
-.service-parent i{
+.Services .service-item i{
     color: rgb(83, 223, 48);
-    font-size: 30px;
-    padding-top: 10px;
+    font-size: 25px;
 }
-.single-service h2{
-    color: white;
-    font-weight: 500;
-    padding: 10px 0;
+.Services .service-item h2{
+    color: wheat;
+    padding: 10px;
+    font-weight: 400;
 }
-.single-service p{
-    color: rgb(177, 173, 173);
-    font-weight: 200;
-    padding-bottom: 10px;
-}
+.Services .service-item p{
+    color: #979797;
+    padding: 0 5px;
 
+}
 /* main section code end  here  */
 
 
@@ -152,26 +152,23 @@ nav ul li a.active{
 
 /* main section respensive code start here  */
 
+
+
 @media only screen and (max-width: 688px){
-    .service-parent{
+    .Services .parent{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
-        grid-gap: 10px;
-    }
-    .single-service{
-        margin: 10px 0;
-
     }
 }
+
 @media only screen and (min-width: 689px) and (max-width: 1099px){
-    .service-parent{
+    .Services .parent{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
-        grid-gap: 20px;
+        grid-gap: 20px
     }
-
 }
 
 
